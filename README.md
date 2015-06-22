@@ -84,7 +84,7 @@ If you don't want to include the project as a dependency in your application's X
 
 Xcode 6 and iOS 8 support the use of full frameworks, as does the Mac, which simplifies the process of adding this to your application. To add this to your application, I recommend dragging the .xcodeproj project file into your application's project (as you would in the static library target).
 
-For your application, go to its target build settings and choose the Build Phases tab. Under the Target Dependencies grouping, add GPUImageFramework on iOS (not GPUImage, which builds the static library) or GPUImage on the Mac. Under the Link Binary With Libraries section, add GPUImage.framework.
+For your application, go to its target build settings and choose the Build Phases tab. Under the Target Dependencies grouping, add GPUImage on iOS (not GPUImageFramework, which builds the static library) or GPUImage on the Mac. Under the Link Binary With Libraries section, add GPUImage.framework.
 
 This should cause GPUImage to build as a framework. Under Xcode 6, this will also build as a module, which will allow you to use this in Swift projects. When set up as above, you should just need to use 
 
